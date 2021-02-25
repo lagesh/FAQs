@@ -29,11 +29,6 @@ h4 {
   font-size: 0.75rem;
 }
 
-.masthead p {
-  font-family: 'Libre Baskerville', serif;
-  font-size: small;
-}
-
 h4:before,
 h4:after {
   background-color: #000;
@@ -53,6 +48,11 @@ h4:before {
 h4:after {
   left: 0.5em;
   margin-right: -50%;
+}
+
+.masthead p {
+  font-family: 'Libre Baskerville', serif;
+  font-size: small;
 }
 
 .nav-list {
@@ -75,15 +75,52 @@ h4:after {
   font-family: 'Libre Baskerville', serif;
   font-size: 0.75rem;
 }
+
 .nav-list .active {
   padding: 0.2rem;
 }
+
 .active {
   background-color: rgb(216, 89, 106);
   width: 15%;
 }
-.nav-list a:hover {
-  color: rgb(250, 166, 56);
+
+.nav-list li:hover {
+  background-color: rgb(216, 89, 106);
+  width: 15%;
+  padding: 0.2rem;
+}
+
+/* ------------ FAQS SECTION --------- */
+
+main {
+  background-image: url(./alain-pham-P_qvsF7Yodw-unsplash.jpg);
+  /* background-repeat: repeat; */
+  background-size: cover;
+}
+.container {
+  width: 50%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgb(245, 236, 225);
+}
+
+h3 {
+  font-family: 'Libre Baskerville', serif;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+p {
+  font-family: 'Ubuntu', sans-serif;
 }
 /* ---------- FOOTER ----------- */
 footer {
@@ -91,5 +128,15 @@ footer {
   text-align: center;
   padding: 0.75rem;
   font-family: 'Libre Baskerville', serif;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/*---------- MEDIA QUERIES ------------ */
+@media only screen and (max-width: 850px) {
+  .container {
+    width: 80%;
+  }
 }
