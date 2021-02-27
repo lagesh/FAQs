@@ -77,17 +77,17 @@ h4:after {
   font-size: 0.75rem;
 }
 
-.nav-list .active {
+.nav-list .nav-active {
   padding: 0.2rem;
 }
 
-.active {
+.nav-active {
   background-color: rgb(204, 92, 107);
   width: 15%;
 }
 
 .nav-list li:hover {
-  background-color: rgb(204, 92, 107);
+  background-color: #cc5c6b;
   width: 15%;
   padding: 0.2rem;
 }
@@ -99,13 +99,33 @@ main {
   background-size: cover;
 }
 .container {
-  width: 50%;
+  width: 60%;
   height: 180vh;
   margin: 0 auto;
   padding: 2rem;
   background-color: rgb(245, 236, 225);
 }
 
+.accordion-item {
+  background: #cc5c6b;
+  margin: 1rem 0;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  box-shadow: 2px 2px 3px rgb(32, 32, 32);
+}
+.accordion-item-header {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  min-height: 3rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
 /* ---------- FOOTER ----------- */
 footer {
   background-color: rgb(243, 228, 209);
