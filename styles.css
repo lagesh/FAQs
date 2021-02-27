@@ -118,13 +118,24 @@ main {
 }
 .accordion-item-header {
   padding: 0.5rem 1rem 0.5rem 1rem;
-  min-height: 3rem;
+  min-height: 3.5rem;
   line-height: 1.25rem;
   font-weight: bold;
   display: flex;
   align-items: center;
   position: relative;
   cursor: pointer;
+}
+
+.accordion-item-header::after {
+  content: '\002B';
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+
+.accordion-item-header.active::after {
+  content: '\2212';
 }
 /* ---------- FOOTER ----------- */
 footer {
