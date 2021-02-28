@@ -149,15 +149,13 @@ main {
 }
 
 .accordion-item-body-content {
+  font-size: 0.8rem;
   padding: 1rem;
   line-height: 1.2rem;
   font-family: 'Ubuntu', sans-serif;
-  /* display: none; */
+  
 }
 
-/* .accordion-item-header.active + .accordion-item-body {
-  max-height: 250px;
-} */
 
 /* ---------- FOOTER ----------- */
 footer {
