@@ -107,16 +107,10 @@ main {
 }
 
 .accordion-item {
-  background: #cc5c6b;
   margin: 1rem 0;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  box-shadow: 2px 2px 3px rgb(32, 32, 32);
 }
 .accordion-item-header {
+  background: #cc5c6b;
   padding: 0.5rem 1rem 0.5rem 1rem;
   min-height: 3.5rem;
   line-height: 1.25rem;
@@ -125,6 +119,12 @@ main {
   align-items: center;
   position: relative;
   cursor: pointer;
+  box-shadow: 2px 2px 3px rgb(32, 32, 32);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 
 .accordion-item-header::after {
@@ -137,6 +137,28 @@ main {
 .accordion-item-header.active::after {
   content: '\2212';
 }
+
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  -webkit-transition: max-height 0.2s ease-out;
+  -moz-transition: max-height 0.2s ease-out;
+  -ms-transition: max-height 0.2s ease-out;
+  -o-transition: max-height 0.2s ease-out;
+}
+
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.2rem;
+  font-family: 'Ubuntu', sans-serif;
+  /* display: none; */
+}
+
+/* .accordion-item-header.active + .accordion-item-body {
+  max-height: 250px;
+} */
+
 /* ---------- FOOTER ----------- */
 footer {
   background-color: rgb(243, 228, 209);
