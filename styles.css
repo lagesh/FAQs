@@ -92,6 +92,18 @@ h4:after {
   padding: 0.2rem;
 }
 
+.mobile {
+  cursor: pointer;
+  padding-left: 1rem;
+  display: none;
+}
+.burger {
+  height: 1px;
+  width: 20px;
+  background-color: rgb(247, 247, 247);
+  margin: 5px;
+}
+
 /* ------------ FAQS SECTION --------- */
 
 main {
@@ -185,6 +197,13 @@ footer {
 }
 
 @media only screen and (max-width: 800px) {
+  .nav-list ul {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
   .accordion-item-header {
     font-size: 0.75rem;
   }
