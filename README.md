@@ -1,1 +1,1 @@
-Practice project making a random FAQs page mainly with jQuery effects
+Practice project making a random FAQs page for a fictional construction company. Stack is html, CSS, and vanilla JavaScript. Main functionality focus was on the FAQs section and not on other sections of the page. 
