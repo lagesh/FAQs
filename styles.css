@@ -70,6 +70,10 @@ main {
   background-color: rgb(241, 241, 239);
 }
 
+.container h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
 .accordion-item {
   margin: 1rem 0;
 }
@@ -151,6 +155,9 @@ footer {
 }
 
 @media only screen and (max-width: 800px) {
+  .container h1 {
+    font-size: 1.25rem;
+  }
   .accordion-item-header {
     font-size: 0.75rem;
   }
