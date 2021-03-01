@@ -3,7 +3,7 @@ const accordionItemHeaders = document.querySelectorAll('.accordion-item-header')
 accordionItemHeaders.forEach(accordionItemHeader => {
   accordionItemHeader.addEventListener('click', event => {
     const currentlyActiveHeader = document.querySelector('.accordion-item-header.active');
-    if(currentlyActiveHeader && currentlyActiveHeader !== accordionItemHeader) {
+    if (currentlyActiveHeader && currentlyActiveHeader !== accordionItemHeader) {
       currentlyActiveHeader.classList.toggle('active');
       currentlyActiveHeader.nextElementSibling.style.maxHeight = 0;
     }
