@@ -62,6 +62,7 @@ main {
   background-image: url(./alain-pham-P_qvsF7Yodw-unsplash.jpg);
   background-size: cover;
 }
+
 .container {
   width: 60%;
   height: 90vh;
@@ -74,9 +75,11 @@ main {
   text-align: center;
   font-size: 1.5rem;
 }
+
 .accordion-item {
   margin: 1rem 0;
 }
+
 .accordion-item-header {
   background: rgb(196, 196, 175);
   padding: 0.5rem 1rem 0.5rem 1rem;
@@ -84,6 +87,7 @@ main {
   line-height: 1.25rem;
   font-weight: bold;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   cursor: pointer;
@@ -100,13 +104,13 @@ main {
 .accordion-item-header::after {
   content: '\002B';
   font-size: 1.5rem;
-  position: absolute;
-  right: 1rem;
-  padding-left: 10px;
+  /* position: absolute; */
+  /* right: 1rem; */
 }
 
 .accordion-item-header.active::after {
   content: '\2212';
+  margin-left: 5px;
 }
 
 .accordion-item-body {
@@ -143,12 +147,15 @@ footer {
   .container {
     width: 80%;
   }
+
   h1 {
     font-size: 1.25rem;
   }
+
   h4 {
     font-size: 0.6rem;
   }
+
   .masthead p {
     font-size: 0.6rem;
   }
@@ -158,12 +165,13 @@ footer {
   .container h1 {
     font-size: 1.25rem;
   }
+
   .accordion-item-header {
     font-size: 0.75rem;
   }
 
   .accordion-item-header::after {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .accordion-item-body-content {
@@ -175,8 +183,21 @@ footer {
   h1 {
     font-size: medium;
   }
+
   .container {
     width: 85%;
     padding: 1rem;
+  }
+
+  .container h1 {
+    font-size: 1rem;
+  }
+
+  .accordion-item-header {
+    font-size: 0.65rem;
+  }
+
+  .accordion-item-body-content {
+    font-size: 0.65rem;
   }
 }
