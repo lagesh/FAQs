@@ -56,54 +56,6 @@ h4:after {
   font-size: small;
 }
 
-.nav-list {
-  background-color: #000;
-  padding: 0.4rem;
-}
-
-.nav-list ul {
-  margin: 0 auto;
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-}
-
-.nav-list a {
-  color: #fff;
-  text-decoration: none;
-  font-family: 'Libre Baskerville', serif;
-  font-size: 0.75rem;
-}
-
-.nav-list .nav-active {
-  padding: 0.2rem;
-}
-
-.nav-active {
-  background-color: rgb(204, 92, 107);
-  width: 15%;
-}
-
-.nav-list li:hover {
-  background-color: #cc5c6b;
-  width: 15%;
-  padding: 0.2rem;
-}
-
-.mobile {
-  cursor: pointer;
-  padding-left: 1rem;
-  display: none;
-}
-.burger {
-  height: 1px;
-  width: 20px;
-  background-color: rgb(247, 247, 247);
-  margin: 5px;
-}
-
 /* ------------ FAQS SECTION --------- */
 
 main {
@@ -112,17 +64,17 @@ main {
 }
 .container {
   width: 60%;
-  height: 100vh;
+  height: 90vh;
   margin: 0 auto;
   padding: 2rem;
-  background-color: rgb(245, 236, 225);
+  background-color: rgb(241, 241, 239);
 }
 
 .accordion-item {
   margin: 1rem 0;
 }
 .accordion-item-header {
-  background: #cc5c6b;
+  background: rgb(196, 196, 175);
   padding: 0.5rem 1rem 0.5rem 1rem;
   min-height: 3.5rem;
   line-height: 1.25rem;
@@ -131,6 +83,8 @@ main {
   align-items: center;
   position: relative;
   cursor: pointer;
+  color: rgb(58, 56, 56);
+  letter-spacing: 1.5px;
   box-shadow: 2px 2px 3px rgb(32, 32, 32);
   border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -141,10 +95,10 @@ main {
 
 .accordion-item-header::after {
   content: '\002B';
-  font-size: 2rem;
+  font-size: 1.5rem;
   position: absolute;
   right: 1rem;
-  margin-left: 5px;
+  padding-left: 10px;
 }
 
 .accordion-item-header.active::after {
@@ -197,13 +151,6 @@ footer {
 }
 
 @media only screen and (max-width: 800px) {
-  .nav-list ul {
-    display: none;
-  }
-
-  .mobile {
-    display: block;
-  }
   .accordion-item-header {
     font-size: 0.75rem;
   }
@@ -224,9 +171,5 @@ footer {
   .container {
     width: 85%;
     padding: 1rem;
-  }
-
-  .question h3 {
-    font-size: 0.7rem;
   }
 }
